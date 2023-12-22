@@ -192,8 +192,7 @@ main {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
 }
 #person-img {
   width: 100%;
@@ -204,7 +203,7 @@ main {
   position: relative;
 }
 .img-container::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
   content: "\f10e";
   position: absolute;
