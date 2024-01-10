@@ -10,5 +10,11 @@ about.addEventListener('click', (e) => {
             btn.classList.remove('active')
             e.target.classList.add('active')
         })
+        /* hide other articles */
+        articles.forEach((article) => {
+            article.classList.remove('active')
+        })
+        const element = document.getElementById(id)
+        element.classList.add('active')
     }
 })
