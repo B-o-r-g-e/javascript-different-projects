@@ -82,6 +82,10 @@ function getRemainingTime(){
   items.forEach((item, index) => {
     item.innerHTML = format(values[index])
   })
+  if (t < 0) {
+    clearInterval(countdown)
+    deadline.innerHTML = `<h4 class="expired">sorry, this giveaway has expired</h4>`
+  }
 }
 
 //countdown
