@@ -71,6 +71,10 @@ function getRemainingTime(){
 
   //set values array
   const values = [days, hours, minutes, seconds]
+
+  items.forEach((item, index) => {
+    item.innerHTML = values[index]
+  })
 }
 
 getRemainingTime()
