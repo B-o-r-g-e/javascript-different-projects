@@ -80,7 +80,7 @@ function getRemainingTime(){
   }
 
   items.forEach((item, index) => {
-    item.innerHTML = values[index]
+    item.innerHTML = format(values[index])
   })
 }
 
