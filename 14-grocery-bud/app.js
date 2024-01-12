@@ -44,10 +44,15 @@ function addItem(e) {
             </div>`
   /* Append child*/
   list.appendChild(element)
+
   /* Display alert*/
   displayAlert('item added to list', 'success')
+
   /* show container */
   container.classList.add('show-container')
+
+  /* Add to local storage*/
+  addToLcalStorage(id, value)
 
  }
  else if (value && editFlag){
