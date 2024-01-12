@@ -33,7 +33,10 @@ function addItem(e) {
   console.log('edit')
   console.log(value)
  }
- else {}
+ else {
+  alert.textContent = 'empty value'
+  alert.classList.add('alert-danger')
+ }
 }
 
 // ****** LOCAL STORAGE **********
