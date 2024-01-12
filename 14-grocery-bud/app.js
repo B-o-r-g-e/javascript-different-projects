@@ -46,6 +46,8 @@ function addItem(e) {
   list.appendChild(element)
   /* Display alert*/
   displayAlert('item added to list', 'success')
+  /* show container */
+  container.classList.add('show-container')
 
  }
  else if (value && editFlag){
