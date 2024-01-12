@@ -52,10 +52,10 @@ function addItem(e) {
   container.classList.add('show-container')
 
   /* Add to local storage*/
-  addToLcalStorage(id, value)
+  addToLocalStorage(id, value)
 
   /* set back to default*/
-  setBackToDefaukt()
+  setBackToDefault()
 
  }
  else if (value && editFlag){
@@ -80,8 +80,16 @@ function displayAlert(text, action) {
 }
 
 // Set back to default
+function setBackToDefault() {
+ grocery.value = ''
+ editFlag = false
+ editID = ''
+}
 
 // ****** LOCAL STORAGE **********
+function addToLocalStorage(id, value) {
+ console.log('added to local storage')
+}
 
 // ****** SETUP ITEMS **********
 
