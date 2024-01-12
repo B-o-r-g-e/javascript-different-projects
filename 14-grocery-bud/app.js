@@ -104,7 +104,14 @@ function clearItems() {
 }
 
 //delete function
+function deleteItem() {
+ console.log('item deleted')
+}
+
 //edit function
+function editItem() {
+ console.log('edit item')
+}
 
 // Set back to default
 function setBackToDefault() {
