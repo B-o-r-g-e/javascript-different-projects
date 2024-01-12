@@ -26,8 +26,7 @@ function addItem(e) {
  * The else if is when value is not empty (true) & editFlag is false (ln12)
  * */
  if (value && !editFlag){
-  console.log(value)
-  console.log('add something')
+  const element = document.createElement('article')
  }
  else if (value && editFlag){
   console.log('edit')
@@ -46,7 +45,7 @@ function displayAlert(text, action) {
  /* remove alert */
  setTimeout(() => {
   alert.textContent = ''
-  alert.classList.remove('alert-danger')
+  alert.classList.remove(`alert-${action}`)
  }, 1000)
 }
 
