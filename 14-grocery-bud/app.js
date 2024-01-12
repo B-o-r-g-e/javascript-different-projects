@@ -104,8 +104,9 @@ function clearItems() {
 }
 
 //delete function
-function deleteItem() {
- console.log('item deleted')
+function deleteItem(e) {
+ const element = e.currentTarget.parentElement.parentElement
+ list.removeChild(element)
 }
 
 //edit function
