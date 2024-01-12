@@ -18,6 +18,9 @@ form.addEventListener('submit', addItem)
 //clear item
 clearBtn.addEventListener('click', clearItems)
 
+//load items
+window.addEventListener('DOMContentLoaded', setupItems)
+
 // ****** FUNCTIONS **********
 function addItem(e) {
  e.preventDefault();
@@ -177,4 +180,9 @@ function getLocalStorage() {
 }
 
 // ****** SETUP ITEMS **********
+function setupItems() {
+ let items = getLocalStorage()
+ if (items.length > 0) {
 
+ }
+}
