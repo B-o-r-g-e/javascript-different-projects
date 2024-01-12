@@ -45,6 +45,9 @@ function addItem(e) {
                 <i class="fas fa-trash"></i>
               </button>
             </div>`
+  const deleteBtn = element.querySelector('.delete-btn')
+  const editBtn = element.querySelector('.edit-btn')
+
   /* Append child*/
   list.appendChild(element)
 
