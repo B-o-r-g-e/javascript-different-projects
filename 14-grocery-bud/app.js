@@ -83,7 +83,22 @@ function displayAlert(text, action) {
 }
 
 //clear items
+function clearItems() {
+ const items = document.querySelectorAll('.grocery-item')
 
+ if (items.length > 0) {
+  items.forEach((item) => {
+   list.removeChild(item)
+  })
+ }
+ container.classList.remove('show-container')
+ displayAlert('list cleared', 'success')
+ setBackToDefault()
+ // localStorage.removeItem('list')
+}
+
+//delete function
+//edit function
 
 // Set back to default
 function setBackToDefault() {
