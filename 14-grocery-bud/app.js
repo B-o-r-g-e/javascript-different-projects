@@ -27,6 +27,11 @@ function addItem(e) {
  * */
  if (value && !editFlag){
   const element = document.createElement('article')
+  /* Add class*/
+  element.classList.add('grocery-item')
+  /* Add id*/
+  const attr = document.createAttribute('data-id')
+  attr.value = id
  }
  else if (value && editFlag){
   console.log('edit')
