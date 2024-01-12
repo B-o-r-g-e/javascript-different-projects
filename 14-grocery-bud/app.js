@@ -20,11 +20,23 @@ function addItem(e) {
  e.preventDefault();
  const value = grocery.value
  const id = new Date().getTime().toString()
- if (value !== '' && editFlag === false){}
- else if (value !== '' && editFlag === true){}
+
+ /*
+ * The if statement check for when value is not empty and editFlag is true
+ * The else if is when value is not empty (true) & editFlag is false (ln12)
+ * */
+ if (value && !editFlag){
+  console.log(value)
+  console.log('add something')
+ }
+ else if (value && editFlag){
+  console.log('edit')
+  console.log(value)
+ }
  else {}
 }
 
 // ****** LOCAL STORAGE **********
 
 // ****** SETUP ITEMS **********
+
