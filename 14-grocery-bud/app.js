@@ -54,6 +54,9 @@ function addItem(e) {
   /* Add to local storage*/
   addToLcalStorage(id, value)
 
+  /* set back to default*/
+  setBackToDefaukt()
+
  }
  else if (value && editFlag){
   console.log('edit')
@@ -75,6 +78,8 @@ function displayAlert(text, action) {
   alert.classList.remove(`alert-${action}`)
  }, 1000)
 }
+
+// Set back to default
 
 // ****** LOCAL STORAGE **********
 
