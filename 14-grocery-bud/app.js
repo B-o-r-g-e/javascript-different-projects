@@ -103,7 +103,7 @@ function clearItems() {
  container.classList.remove('show-container')
  displayAlert('list cleared', 'success')
  setBackToDefault()
- // localStorage.removeItem('list')
+ localStorage.removeItem('list')
 }
 
 //delete function
@@ -160,7 +160,14 @@ function removeFromLocalStorage(id) {
 }
 
 function editLocalStorage(id, value) {
-
+ let items = getLocalStorage()
+ items = items.map((item) => {
+  if (item.id === id) {
+   item.value = value
+  }
+  return item
+ })
+ localStorage.setItem('list', JSON.stringify(items))
 }
 
 function getLocalStorage() {
