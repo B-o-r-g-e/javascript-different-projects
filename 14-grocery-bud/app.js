@@ -68,8 +68,11 @@ function addItem(e) {
 
  }
  else if (value && editFlag){
-  console.log('edit')
-  console.log(value)
+  editElement.innerHTML = value
+  displayAlert('value changed', 'success')
+  // edit local storage
+  editLocalStorage(editID, value)
+  setBackToDefault()
  }
  else {
   displayAlert('Please enter value', 'danger')
@@ -118,8 +121,15 @@ function deleteItem(e) {
 }
 
 //edit function
-function editItem() {
- console.log('edit item')
+function editItem(e) {
+ const element = e.currentTarget.parentElement.parentElement
+ // set edit item
+ editElement = e.currentTarget.parentElement.previousElementSibling
+ // set form value
+ grocery.value = editElement.innerHTML
+ editFlag = true
+ editID = element.dataset.id
+ submitBtn.textContent = 'edit'
 }
 
 // Set back to default
