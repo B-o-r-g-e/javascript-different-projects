@@ -32,6 +32,7 @@ function addItem(e) {
   /* Add id*/
   const attr = document.createAttribute('data-id')
   attr.value = id
+  element.setAttributeNode(attr)
  }
  else if (value && editFlag){
   console.log('edit')
