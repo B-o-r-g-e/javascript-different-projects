@@ -15,6 +15,9 @@ let editID = '';
 // ****** EVENT LISTENERS **********
 form.addEventListener('submit', addItem)
 
+//clear item
+clearBtn.addEventListener('click', clearItems)
+
 // ****** FUNCTIONS **********
 function addItem(e) {
  e.preventDefault();
@@ -79,11 +82,15 @@ function displayAlert(text, action) {
  }, 1000)
 }
 
+//clear items
+
+
 // Set back to default
 function setBackToDefault() {
  grocery.value = ''
  editFlag = false
  editID = ''
+ submitBtn.textContent = 'submit '
 }
 
 // ****** LOCAL STORAGE **********
