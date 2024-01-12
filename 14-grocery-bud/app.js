@@ -34,9 +34,14 @@ function addItem(e) {
   console.log(value)
  }
  else {
-  alert.textContent = 'empty value'
-  alert.classList.add('alert-danger')
+
  }
+}
+
+/* Display Alert*/
+function displayAlert(text, action) {
+ alert.textContent = text
+ alert.classList.add(`alert-${action}`)
 }
 
 // ****** LOCAL STORAGE **********
