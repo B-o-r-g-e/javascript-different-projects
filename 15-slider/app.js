@@ -8,5 +8,8 @@ slides.forEach( (slide, index) => {
 
 let counter = 0
 nextBtn.addEventListener('click', () => {
-
+    counter++
+})
+prevBtn.addEventListener('click', () => {
+    counter--
 })
