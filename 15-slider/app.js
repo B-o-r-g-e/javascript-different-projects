@@ -30,12 +30,15 @@ function carousel() {
     } else {
         nextBtn.style.display = 'none'
     }
-
+    if (counter > 0) {
+        prevBtn.style.display = 'block'
+    } else {
+        prevBtn.style.display = 'none'
+    }
 
     slides.forEach((slide) => {
         slide.style.transform = `translateX(-${counter * 100}%)`
     })
 }
-
 prevBtn.style.display = 'none'
 console.log(slides.length - 1)
