@@ -13,3 +13,9 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     counter--
 })
+
+function carousel() {
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${counter * 100}%)`
+    })
+}
