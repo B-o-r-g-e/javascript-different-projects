@@ -41,4 +41,3 @@ function carousel() {
     })
 }
 prevBtn.style.display = 'none'
-console.log(slides.length - 1)
